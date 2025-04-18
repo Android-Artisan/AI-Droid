@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Install | Local AI</title>
+  <!-- Add the shared CSS and Tailwind script here -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: url('https://img.goodfon.com/original/2666x1500/d/9b/annapurna-massif-himalayas-nepal-hd-4k-4k-ultra-hd-2160p-mou.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .glass {
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      background-color: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 1rem;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    }
+  </style>
+</head>
+<body class="min-h-screen">
+
+  <!-- Navbar -->
+  <header class="glass mx-auto max-w-6xl mt-6 px-6 py-4 flex justify-between items-center text-white">
+    <div class="flex items-center gap-2">
+      <h1 class="text-2xl font-bold drop-shadow">Local AI</h1>
+      <span class="text-xs bg-yellow-400 text-black px-2 py-0.5 rounded-full">Beta</span>
+    </div>
+    <nav class="space-x-6 text-sm text-white/80">
+      <a href="index.html" class="hover:text-white">Home</a>
+      <a href="install.html" class="hover:text-white">Install</a>
+      <a href="docs.html" class="hover:text-white">Docs</a>
+    </nav>
+  </header>
+
+  <main class="glass mx-auto max-w-3xl my-16 p-10">
+    <h2 class="text-3xl font-semibold mb-6 text-center">Install via Termux</h2>
+    <p class="mb-4 text-white/80 text-sm text-center">Only <strong>Gemma 3</strong> model is optimized for now.</p>
+
+    <div class="bg-black/40 p-4 rounded-lg text-sm font-mono">
+      <pre class="text-white/80 whitespace-pre-wrap">
+    curl -fsSL -o install.sh https://local.ai.fjordservers.com/install.sh 
+    bash install.sh
+      </pre>
+    </div>
+
+    <p class="text-xs text-white/60 mt-4 text-center">
+      Requires Termux on Android or any Linux-based environment.
+    </p>
+  </main>
+</body>
+</html>

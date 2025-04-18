@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI for Android</title>
+  <!-- Add the shared CSS and Tailwind script here -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: url('https://img.goodfon.com/original/2666x1500/d/9b/annapurna-massif-himalayas-nepal-hd-4k-4k-ultra-hd-2160p-mou.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .glass {
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      background-color: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 1rem;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    }
+  </style>
+</head>
+<body class="min-h-screen">
+
+  <!-- Navbar -->
+  <header class="glass mx-auto max-w-6xl mt-6 px-6 py-4 flex justify-between items-center text-white">
+    <div class="flex items-center gap-2">
+      <h1 class="text-2xl font-bold drop-shadow">AI For Android</h1>
+      <span class="text-xs bg-yellow-400 text-black px-2 py-0.5 rounded-full">Beta</span>
+    </div>
+    <nav class="space-x-6 text-sm text-white/80">
+      <a href="index.html" class="hover:text-white">Home</a>
+      <a href="install.html" class="hover:text-white">Install</a>
+      <a href="docs.html" class="hover:text-white">Docs</a>
+    </nav>
+  </header>
+
+  <main class="glass mx-auto max-w-3xl my-16 p-10 text-center">
+    <h2 class="text-4xl font-bold mb-4">Run AI Models Locally, On Android.</h2>
+    <p class="text-white/90 mb-6">
+    Run AI Locally On Android, Based on <strong>Ollama</strong>.
+    </p>
+    <p class="text-yellow-300 font-medium italic">
+      For now, only <strong>Gemma 3</strong> is optimized for Android.
+    </p>
+    <div class="mt-6 text-sm text-white/60">
+      GUI and APK coming soon. CLI installation is available today.
+    </div>
+  </main>
+</body>
+</html>
