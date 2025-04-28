@@ -36,9 +36,9 @@ if [[ ! "$response" =~ ^[Yy]$ ]]; then
 fi
 
 # Define download URL and installation path
-GITHUB_URL="https://Android-Artisan.github.io/AI-Droid/ollama"
+GITHUB_URL="https://Android-Artisan.github.io/AI-Droid/aidroid"
 INSTALL_DIR="$PREFIX/bin"
-BINARY_NAME="ollama"
+BINARY_NAME="aidroid"
 TEMP_FILE=$(mktemp)
 
 # Ensure cleanup on failure
